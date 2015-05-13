@@ -22,9 +22,9 @@
 
 # 集成教程
 
-1. 解压DataEye SDK压缩包，拷贝dcagent.json文件和dcagent目录到你的项目根目录
+1.解压DataEye SDK压缩包，拷贝dcagent.json文件和dcagent目录到你的项目根目录
 
-2. 修改你的项目根目录下的egretProperties.json，在modules属性中加入DataEye SDK的配置项，参考如下格式或SDK压缩包内的egretProperties.sample.json：
+2.修改你的项目根目录下的egretProperties.json，在modules属性中加入DataEye SDK的配置项，参考如下格式或SDK压缩包内的egretProperties.sample.json：
 
 ```js
 {
@@ -49,7 +49,7 @@
 }
 ```
 
-3. 初始化代码
+3.初始化代码
 
 ```js
 var agentConfig = new DCAgentInitConfig();
@@ -60,7 +60,7 @@ DCAgent.init(agentConfig);
 
 初始化全部配置参数请参见 [http://wiki.dataeye.com/h5/document/html5/html5-quick.html#part2](http://wiki.dataeye.com/h5/document/html5/html5-quick.html#part2)
 
-4. 使用付费接口
+4.使用付费接口
 
 ```js
 var paymentConfig = new DCAgentPaymentConfig();
