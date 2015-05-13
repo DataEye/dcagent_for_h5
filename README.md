@@ -22,7 +22,7 @@
 
 # 集成教程
 
-1.解压DataEye SDK压缩包，拷贝dcagent.json文件和dcagent目录到你的项目根目录
+1.解压DataEye SDK压缩包，拷贝dcagent.json文件到你的项目根目录，拷贝dcagent文件夹到你的项目的src目录
 
 2.修改你的项目根目录下的egretProperties.json，在modules属性中加入DataEye SDK的配置项，参考如下格式或SDK压缩包内的egretProperties.sample.json：
 
