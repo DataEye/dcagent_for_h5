@@ -1,30 +1,25 @@
-# DCAgent
-
-[DataEye](http://www.dataeye.com/) SDK for HTML5 game analysis, works on normal HTML5 browser (include WebView without DOM) and Egret Engine (include runtime).
-
-# Latest Version
-
-`0.1.4` released on `2015-05-07`
-
-# Integrate Tutorial
-
-[http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part4](http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part4)
-
-----
-
-# DCAgent
+# DataEye SDK for HTML5 - DCAgent
 
 [DataEye](http://www.dataeye.com/) HTML5游戏数据分析统计SDK，适用于HTML 5浏览器（支持无DOM环境）以及白鹭引擎（支持runtime）。
 
-# 最新版本
+## 最新版本
 
 `0.1.4` 发布于 `2015-05-07`
 
-# 集成教程
+## 项目结构介绍
 
-1.解压DataEye SDK压缩包，拷贝dcagent.json文件到你的项目根目录，拷贝dcagent文件夹到你的项目的src目录
+- DataEyeDemo 演示项目源代码，包含SDK初始化代码(src/Main.ts 150行)
+- DataEyeDemoApp 演示项目源代码打包的安卓APP，用于演示白鹭引擎runtime
+- dcagent SDK源代码
+- egret-android-support-1.7.0 白鹭引擎打包APP模板
 
-2.修改你的项目根目录下的egretProperties.json，在modules属性中加入DataEye SDK的配置项，参考如下格式或SDK压缩包内的egretProperties.sample.json：
+[下载演示代码](https://github.com/DataEye/dcagent_for_h5/archive/master.zip)
+
+## 集成教程
+
+1.解压DataEye SDK压缩包，拷贝dcagent文件夹到你的项目根目录
+
+2.修改你的项目根目录下的egretProperties.json，在modules属性中加入DataEye SDK的配置项：
 
 ```js
 {
@@ -36,10 +31,11 @@
         {
             "name": "res"
         },
-        // 这里加入dcagent的配置
+        // 这里加入dcagent的配置，这里的path可以根据你的实际情况填写
+        // 比如你将dcagent文件夹放到src目录下，这里就填写 src/dcagent
         {
             "name": "dcagent",
-            "path": "."
+            "path": "../dcagent"
         }
     ],
     "native": {
@@ -48,6 +44,8 @@
     "egret_version": "1.7.0"
 }
 ```
+
+**注意： 如果运行示例代码，请在编译时请运行 `egret build -e`，不要忘记-e参数**
 
 3.初始化代码
 
@@ -69,3 +67,17 @@ DCAgent.onPayment(paymentConfig);
 ```
 
 付费接口全部配置参数请参见 [http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part2](http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part2)
+
+----
+
+# DCAgent
+
+[DataEye](http://www.dataeye.com/) SDK for HTML5 game analysis, works on normal HTML5 browser (include WebView without DOM) and Egret Engine (include runtime).
+
+## Latest Version
+
+`0.1.4` released on `2015-05-07`
+
+## Integrate Tutorial
+
+[http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part4](http://wiki.dataeye.com/h5/document/html5/html5-advanced-guide.html#part4)
