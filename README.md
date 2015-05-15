@@ -8,9 +8,9 @@
 
 ## 项目结构介绍
 
-- DataEyeDemo 演示项目源代码，包含SDK初始化代码(src/Main.ts 150行)
-- DataEyeDemoApp 演示项目源代码打包的安卓APP，用于演示白鹭引擎runtime
-- dcagent SDK源代码
+- DataEyeDemo 演示项目源代码，包含DataEye SDK初始化代码(src/Main.ts 150行)
+- DataEyeDemoApp 打包到安卓APP的演示项目，用于演示DataEye SDK在白鹭引擎runtime下的运行
+- dcagent DataEye SDK源代码
 - egret-android-support-1.7.0 白鹭引擎打包APP模板
 
 [下载演示代码](https://github.com/DataEye/dcagent_for_h5/archive/master.zip)
@@ -45,7 +45,7 @@
 }
 ```
 
-**注意： 如果运行示例代码，请在编译时请运行 `egret build -e`，不要忘记-e参数**
+**注意： 如果运行演示代码，请在编译时请运行 `egret build -e`，不要忘记-e参数**
 
 3.初始化代码
 
