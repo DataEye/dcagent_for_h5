@@ -129,9 +129,13 @@ var Main = (function (_super) {
         //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
         // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
         RES.getResAsync("description", this.startAnimation, this);
+        // 体验DEMO，请前往 http://www.dataeye.com/h5.html
         var agentConfig = new DCAgentInitConfig();
         agentConfig.appId = 'C56B61FB6BBA48B31CB529176B1E9E8D';
-        DCAgent.init(agentConfig);
+        // 详细配置以及接口文档查看，请前往 http://wiki.dataeye.com/h5/document/html5/html5-quick.html
+        DCAgent.init(agentConfig, function () {
+            console.log('#DataEye SDK has been initialized.');
+        });
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
